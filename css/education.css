@@ -1,0 +1,30 @@
+.education-box {
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.05), rgba(0, 255, 136, 0.05));
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 700px;
+}
+
+.education-box h3 {
+    color: #fff;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.education-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-item {
+    color: #aaa;
+}
+
+.info-item strong {
+    color: #00ffff;
+    display: block;
+    margin-bottom: 5px;
+}

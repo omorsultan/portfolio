@@ -1,0 +1,35 @@
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-box {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-box:hover {
+    border-color: #00ffff;
+    background: rgba(0, 255, 255, 0.05);
+    transform: translateY(-5px);
+}
+
+.skill-box h3 {
+    color: #00ffff;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.skill-box ul {
+    list-style: none;
+}
+
+.skill-box li {
+    color: #aaa;
+    padding: 5px 0;
+    font-size: 0.95em;
+}
