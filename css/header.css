@@ -14,7 +14,17 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    height: 250px;
+    
 }
+ .profile-pic{
+    height: 250px;
+    border-radius: 20px;
+    border-color: #00ffff;
+    border-width: 2px;
+    border: 4px solid navy;
+
+ }
 
 .nav-links {
     display: flex;

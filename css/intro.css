@@ -1,14 +1,14 @@
-.hero {
+.intro-section {
     padding: 100px 0;
     text-align: left;
     position: relative;
 }
 
-.hero-content {
+.intro-content {
     max-width: 800px;
 }
 
-.hero-tag {
+.intro-tag {
     display: inline-block;
     color: #00ffff;
     border: 1px solid #00ffff;
@@ -19,7 +19,7 @@
     font-weight: 600;
 }
 
-h1 {
+.intro-section h1 {
     font-size: 4.5em;
     font-weight: 800;
     margin-bottom: 20px;
@@ -30,13 +30,13 @@ h1 {
     line-height: 1.1;
 }
 
-.hero-subtitle {
+.intro-subtitle {
     font-size: 1.5em;
     color: #888;
     margin-bottom: 30px;
 }
 
-.hero-description {
+.intro-description {
     font-size: 1.1em;
     color: #aaa;
     line-height: 1.8;
