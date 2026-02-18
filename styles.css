@@ -334,34 +334,21 @@ body {
     box-shadow: 0 8px 25px var(--shadow);
 }
 
-.hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .profile-card {
-    background: var(--bg-secondary);
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 20px 60px var(--shadow);
-    position: relative;
-    border: 1px solid var(--border-color);
-    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.profile-avatar {
-    width: 200px;
-    height: 200px;
-    background: var(--gradient);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    color: white;
-    margin-bottom: 20px;
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;      /* makes circle */
+    object-fit: cover;       /* keeps image ratio */
+    border: 4px solid cyan;  /* optional border */
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
 }
+
 
 .floating-icons {
     position: absolute;
@@ -892,80 +879,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Game Section */
-.game-section {
-    background: var(--bg-secondary);
-}
-
-.game-container {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.game-header {
-    margin-bottom: 30px;
-}
-
-.game-header h3 {
-    margin-bottom: 20px;
-    color: var(--text-primary);
-    font-size: 1.8rem;
-}
-
-.game-controls {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-}
-
-.game-stats {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 30px;
-}
-
-.stat {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text-primary);
-}
-
-.stat span {
-    color: var(--primary-color);
-}
-
-#game-canvas {
-    border: 3px solid var(--border-color);
-    border-radius: 15px;
-    box-shadow: 0 8px 25px var(--shadow);
-    background: var(--bg-primary);
-    margin-bottom: 20px;
-}
-
-.game-instructions {
-    background: var(--bg-primary);
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid var(--border-color);
-    text-align: left;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.game-instructions h4 {
-    margin-bottom: 10px;
-    color: var(--primary-color);
-}
-
-.game-instructions p {
-    color: var(--text-secondary);
-    line-height: 1.6;
-}
-
 /* Contact Section */
 .contact-content {
     display: grid;
@@ -1030,61 +943,6 @@ body {
 
 .contact-item a:hover {
     color: var(--primary-color);
-}
-
-.contact-form {
-    background: var(--bg-secondary);
-    padding: 40px;
-    border-radius: 15px;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 8px 25px var(--shadow);
-}
-
-.contact-form h3 {
-    margin-bottom: 30px;
-    color: var(--text-primary);
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.form-group {
-    margin-bottom: 25px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 15px 20px;
-    border: 2px solid var(--border-color);
-    border-radius: 10px;
-    background: var(--bg-primary);
-    color: var(--text-primary);
-    font-size: 1rem;
-    transition: var(--transition);
-    resize: vertical;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-}
-
-.error-message {
-    color: #ef4444;
-    font-size: 0.9rem;
-    margin-top: 5px;
-    display: none;
-}
-
-.error-message.show {
-    display: block;
-}
-
-.form-group input.error,
-.form-group textarea.error {
-    border-color: #ef4444;
 }
 
 /* Modal */
@@ -1304,8 +1162,5 @@ body {
         flex-direction: column;
     }
 
-    #game-canvas {
-        width: 300px;
-        height: 300px;
-    }
+    
 }

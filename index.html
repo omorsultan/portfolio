@@ -25,7 +25,6 @@
                 <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#game" class="nav-link">Game</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -61,25 +60,12 @@
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-avatar">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <div class="floating-icons">
-                        <div class="icon-float" style="--delay: 0s">
-                            <i class="fab fa-js-square"></i>
-                        </div>
-                        <div class="icon-float" style="--delay: 1s">
-                            <i class="fab fa-java"></i>
-                        </div>
-                        <div class="icon-float" style="--delay: 2s">
-                            <i class="fas fa-database"></i>
-                        </div>
-                    </div>
+            </div><div class="hero-image">
+            <div class="profile-card">
+                    <img src="profile-pic.jpeg" alt="Profile Picture" class="profile-img">
                 </div>
             </div>
+
         </div>
         <div class="scroll-indicator">
             <div class="scroll-arrow"></div>
@@ -355,32 +341,6 @@
         </div>
     </section>
 
-    <!-- Mini Game Section -->
-    <section id="game" class="game-section section">
-        <div class="container">
-            <h2 class="section-title">Interactive Challenge</h2>
-            <div class="game-container">
-                <div class="game-header">
-                    <h3>Mini Snake Game</h3>
-                    <div class="game-controls">
-                        <button id="game-start" class="btn btn-primary">Start Game</button>
-                        <button id="game-pause" class="btn btn-secondary" disabled>Pause</button>
-                        <button id="game-reset" class="btn btn-outline">Reset</button>
-                    </div>
-                    <div class="game-stats">
-                        <div class="stat">Score: <span id="game-score">0</span></div>
-                        <div class="stat">High Score: <span id="game-high-score">0</span></div>
-                    </div>
-                </div>
-                <canvas id="game-canvas" width="400" height="400"></canvas>
-                <div class="game-instructions">
-                    <h4>How to Play:</h4>
-                    <p>Use arrow keys to control the snake. Eat the red food to grow and increase your score!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact section">
         <div class="container">
@@ -415,7 +375,7 @@
                     </div>
                 </div>
 
-                <form class="contact-form" id="contact-form">
+                <!-- <form class="contact-form" id="contact-form">
                     <h3>Send me a message</h3>
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -434,7 +394,7 @@
                         <div class="error-message" id="message-error"></div>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                </form> -->
             </div>
         </div>
     </section>
