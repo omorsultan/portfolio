@@ -3,190 +3,462 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omor Sultan - Portfolio</title>
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/intro.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/education.css">
-    <link rel="stylesheet" href="css/hobbies.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/responsive.css"
+    <title>Omor Sultan - Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="grid-background"></div>
-    
-    <div class="container">
-        <nav>
-            <div class="logo"><img class="profile-pic" src="image/profile-pic.jpeg"> </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
 
-        <div class="intro-section">
-            <div class="intro-content">
-                <div class="intro-tag">SOFTWARE ENGINEER</div>
-                <h1>Omor Sultan</h1>
-                <p class="intro-subtitle">Building Real-World Software Systems</p>
-                <p class="intro-description">
-                    3rd-year Software Engineering student passionate about problem-solving and turning innovative ideas into functional systems. Currently mastering Node.js and Computer Networking.
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>OS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#game" class="nav-link">Game</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span id="typing-name" class="highlight"></span></h1>
+                <p id="typing-subtitle" class="hero-subtitle"></p>
+                <p class="hero-description">
+                    Passionate software engineering student with a strong foundation in multiple programming languages 
+                    and a drive to solve complex problems through innovative technology solutions.
                 </p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/omor-sultan-716284335" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/omorsultan" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:omorsultansust@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="icon-float" style="--delay: 0s">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="icon-float" style="--delay: 1s">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="icon-float" style="--delay: 2s">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-
-        <section id="about">
-            <div class="section-header">
-                <div class="section-tag">Introduction</div>
-                <h2>About Me</h2>
-            </div>
-            <p style="color: #aaa; font-size: 1.1em; line-height: 1.8; max-width: 900px;">
-                I am a 3rd-year Software Engineering student with a strong interest in building real-world software systems. I am currently learning computer networking and Node.js, while working with languages such as C, C++, Java, JavaScript, and SQL. I am motivated by problem-solving and enjoy turning ideas into functional systems. I have experience with academic projects, including a Smart Exam system. My career goal is to become a professional software engineer with strong problem-solving and system-design skills.
-            </p>
-        </section>
-
-        <section id="skills">
-            <div class="section-header">
-                <div class="section-tag">What I Know</div>
-                <h2>Skills</h2>
-            </div>
-            <div class="skills-container">
-                <div class="skill-box">
-                    <h3>Languages</h3>
-                    <ul>
-                        <li>C Programming</li>
-                        <li>C++</li>
-                        <li>Java</li>
-                        <li>JavaScript</li>
-                        <li>SQL</li>
-                    </ul>
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Programming Languages</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="3.54">0</div>
+                            <div class="stat-label">CGPA</div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            I'm a dedicated software engineering student at Shahjalal University of Science and Technology (SUST), 
+                            currently in my 3rd year with a CGPA of 3.54. My passion lies in creating efficient, scalable solutions 
+                            and continuously learning new technologies.
+                        </p>
+                        <p>
+                            With experience in multiple programming languages and a strong foundation in software development 
+                            principles, I'm focused on becoming a professional software engineer who can tackle complex challenges 
+                            and contribute meaningfully to innovative projects.
+                        </p>
+                    </div>
                 </div>
-                <div class="skill-box">
-                    <h3>Currently Learning</h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Computer Networking</li>
-                    </ul>
-                </div>
-                <div class="skill-box">
+                <div class="soft-skills">
                     <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Communication</li>
-                        <li>Teamwork</li>
-                        <li>Problem Solving</li>
-                    </ul>
+                    <div class="skills-list">
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Quick Learner</span>
+                    </div>
+                    <h3>Hobbies</h3>
+                    <div class="hobbies-list">
+                        <div class="hobby-item">
+                            <i class="fas fa-book"></i>
+                            <span>Reading Books</span>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Learning New Things</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects">
-            <div class="section-header">
-                <div class="section-tag">My Work</div>
-                <h2>Projects</h2>
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>B.Sc. in Software Engineering</h3>
+                            <span class="timeline-date">2024 - 2027 (Expected)</span>
+                        </div>
+                        <div class="timeline-body">
+                            <h4>Shahjalal University of Science and Technology (SUST)</h4>
+                            <p><strong>Current Status:</strong> 3rd Year Student</p>
+                            <p><strong>CGPA:</strong> <span class="cgpa-highlight">3.54</span></p>
+                            <div class="cgpa-bar">
+                                <div class="cgpa-progress" data-cgpa="3.54"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="programming">Programming</button>
+                <button class="filter-btn" data-filter="technologies">Technologies</button>
+                <button class="filter-btn" data-filter="learning">Learning</button>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-category="programming">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C</span>
+                                <span class="skill-level">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-level">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-category="technologies">
+                    <h3>Technologies & Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git & GitHub</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-level">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-category="learning">
+                    <h3>Currently Learning</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-level">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Computer Networking</span>
+                                <span class="skill-level">50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Smart Exam</h3>
+                <div class="project-card" data-project="smart-exam">
+                    <div class="project-image">
+                        <i class="fas fa-clipboard-check"></i>
                     </div>
-                    <div class="project-body">
-                        <p>A comprehensive Multiple Choice Question (MCQ) Exam Management System built with Node.js, MySQL, and vanilla frontend technologies.</p>
-                        <p>Developed a role-based online examination system with Admin, Teacher, and Student modules for managing users, exams, and evaluations.</p>
-                        <p>Implemented dashboards for exam creation, participation, result viewing, and performance tracking.</p>
-                        <a href="https://github.com/omorsultan" target="_blank" class="project-link">
-                            View on GitHub →
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Brick Breaker Game</h3>
-                    </div>
-                    <div class="project-body">
-                        <p>A Java-based game with 3 progressive levels, featuring score tracking and increasing difficulty.</p>
-                        <p>Built with object-oriented programming principles and game mechanics.</p>
-                        <a href="https://github.com/omorsultan" target="_blank" class="project-link">
-                            View on GitHub →
-                        </a>
+                    <div class="project-content">
+                        <h3>Smart Exam System</h3>
+                        <p>MCQ Exam Management System with admin, teacher, and student roles</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/omorsultan/smart-exam" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="project-link view-details" onclick="openProjectModal('smart-exam')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-header">
+                <div class="project-card" data-project="brick-breaker">
+                    <div class="project-image">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>3-Level Brick Breaker Game</h3>
+                        <p>Classic brick breaker game with 3 levels and dynamic difficulty</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">OOP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/omorsultan/brick-breaker" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="project-link view-details" onclick="openProjectModal('brick-breaker')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="sneak-game">
+                    <div class="project-image">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <div class="project-content">
                         <h3>Sneak Game</h3>
-                    </div>
-                    <div class="project-body">
-                        <p>A simple C++ console game implementing basic game mechanics and user interaction.</p>
-                        <p>Demonstrates fundamental C++ programming concepts and logic implementation.</p>
-                        <a href="https://github.com/omorsultan" target="_blank" class="project-link">
-                            View on GitHub →
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education">
-            <div class="section-header">
-                <div class="section-tag">Academic Background</div>
-                <h2>Education</h2>
-            </div>
-            <div class="education-box">
-                <h3>Shahjalal University of Science and Technology</h3>
-                <div class="education-info">
-                    <div class="info-item">
-                        <strong>Degree</strong>
-                        B.Sc. in Software Engineering
-                    </div>
-                    <div class="info-item">
-                        <strong>CGPA</strong>
-                        3.54
-                    </div>
-                    <div class="info-item">
-                        <strong>Graduation</strong>
-                        Expected 2027
+                        <p>Console-based game with interactive gameplay and user interface</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Console</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/omorsultan/sneak-game" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="project-link view-details" onclick="openProjectModal('sneak-game')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section>
-            <div class="section-header">
-                <div class="section-tag">Interests</div>
-                <h2>Hobbies</h2>
+    <!-- Mini Game Section -->
+    <section id="game" class="game-section section">
+        <div class="container">
+            <h2 class="section-title">Interactive Challenge</h2>
+            <div class="game-container">
+                <div class="game-header">
+                    <h3>Mini Snake Game</h3>
+                    <div class="game-controls">
+                        <button id="game-start" class="btn btn-primary">Start Game</button>
+                        <button id="game-pause" class="btn btn-secondary" disabled>Pause</button>
+                        <button id="game-reset" class="btn btn-outline">Reset</button>
+                    </div>
+                    <div class="game-stats">
+                        <div class="stat">Score: <span id="game-score">0</span></div>
+                        <div class="stat">High Score: <span id="game-high-score">0</span></div>
+                    </div>
+                </div>
+                <canvas id="game-canvas" width="400" height="400"></canvas>
+                <div class="game-instructions">
+                    <h4>How to Play:</h4>
+                    <p>Use arrow keys to control the snake. Eat the red food to grow and increase your score!</p>
+                </div>
             </div>
-            <div class="hobbies-list">
-                <div class="hobby-item">📚 Reading Books</div>
-                <div class="hobby-item">🚀 Learning New Things</div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="contact-section">
-            <h2>Let's Connect</h2>
-            <p>Feel free to reach out for collaborations or just a friendly chat</p>
-            <div class="social-links">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=omorsultansust@gmail.com" target="_blank" class="social-link">📧 Email</a>
-                <a href="https://linkedin.com/in/omor-sultan-716284335" target="_blank" class="social-link">💼 LinkedIn</a>
-                <a href="https://github.com/omorsultan" target="_blank" class="social-link">💻 GitHub</a>
-            </div>
-        </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new opportunities, collaborations, or just having a friendly chat about technology!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:omorsultansust@gmail.com">omorsultansust@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/omor-sultan-716284335" target="_blank">omor-sultan-716284335</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/omorsultan" target="_blank">github.com/omorsultan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <footer>
-            <p>&copy; 2026 Omor Sultan. Crafted with passion.</p>
-        </footer>
+                <form class="contact-form" id="contact-form">
+                    <h3>Send me a message</h3>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <div class="error-message" id="email-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <div class="error-message" id="subject-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <div class="error-message" id="message-error"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Omor Sultan. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Back to Top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
